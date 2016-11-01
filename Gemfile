@@ -51,3 +51,16 @@ group :production do
   gem 'pg'                # use PostgreSQL in production (Heroku)
   gem 'rails_12factor'    # Heroku-specific production settings
 end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'simplecov', :require => false
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels' #basic imperative step defs
+  gem 'database_cleaner' #required by cucumber
+  gem 'factory_girl_rails' #if using factory girl
+  gem 'metric_fu'
+  gem 'haml'
+  gem 'autotest'
+end
