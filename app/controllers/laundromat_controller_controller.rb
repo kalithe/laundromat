@@ -1,2 +1,0 @@
-class LaundromatControllerController < ApplicationController
-end
