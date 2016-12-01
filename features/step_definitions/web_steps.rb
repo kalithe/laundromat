@@ -2,8 +2,19 @@ require 'uri'
 require 'cgi'
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
 
+module WithinHelpers
+  def with_scope(locator)
+    locator ? within(*selector_for(locator)) { yield } : yield
+  end
+end
+World(WithinHelpers)
+
 Given(/^the following dryers have been added$/) do |table|
   #something
+end
+
+Given /^(?:|I )am on (.+)$/ do |page_name|
+  path_to(page_name)
 end
 
 Given (/^I am on the add dryer page$/) do

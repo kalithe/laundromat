@@ -52,15 +52,18 @@ group :production do
   gem 'rails_12factor'    # Heroku-specific production settings
 end
 
-group :test do
+group :development, :test do
   gem 'rspec-rails'
+  gem 'rspec'
   gem 'guard-rspec'
   gem 'simplecov', :require => false
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels' #basic imperative step defs
   gem 'database_cleaner' #required by cucumber
   gem 'factory_girl_rails' #if using factory girl
   gem 'metric_fu'
   gem 'haml'
   gem 'autotest'
+  gem 'capybara', '2.4.4'
+  gem 'rails_helper'
 end

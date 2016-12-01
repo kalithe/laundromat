@@ -12,6 +12,7 @@ Feature: View the information on the home page
       | 3              | 26-Oct-2016 |
       | 4              | 12-Sep-2016 |
       | 5              | 17-Dec-2016 |
-      
-    And I am on the home page
+    
+Scenario: view home page
+    When I am on the home page
     Then I should see "1" before "2"

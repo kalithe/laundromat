@@ -1,9 +1,9 @@
 Laundromat::Application.routes.draw do
   resources :laundromats
   # map '/' to be a redirect to '/movies'
-<<<<<<< HEAD
+  
   root :to => redirect('/')
-=======
+
   root :to => redirect('/dryers')
 end
   # The priority is based upon order of creation: first created -> highest priority.
