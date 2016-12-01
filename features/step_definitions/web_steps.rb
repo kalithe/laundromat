@@ -3,8 +3,7 @@ require 'cgi'
 require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
 
 Given(/^the following dryers have been added$/) do |table|
-  # table is a Cucumber::MultilineArgument::DataTable
-  pending # Write code here that turns the phrase above into concrete actions
+  #something
 end
 
 Given (/^I am on the add dryer page$/) do
