@@ -1,5 +1,5 @@
 Laundromat::Application.routes.draw do
-  resources :laundromats
+  resources :washers
   # map '/' to be a redirect to '/movies'
   
   root :to => redirect('/')

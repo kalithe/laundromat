@@ -15,4 +15,6 @@ Feature: View the information on the home page
     
 Scenario: view home page
     When I am on the home page
-    Then I should see "1" before "2"
+    Then I should see "1"
+    And I should see "2"
+    And I should see "3"

@@ -52,7 +52,7 @@ When(/^I select machine number "([^"]*)"$/) do |arg1|
 end
 
 Then(/^I should see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+  
 end
 
 Given (/^the following totals of quarters$/) do |table|

@@ -7,5 +7,4 @@ class WasherController < ApplicationController
     
     
     
-    
 end
